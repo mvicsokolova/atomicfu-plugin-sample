@@ -1,3 +1,5 @@
+import kotlinx.atomicfu.*
+
 class AtomicClass {
-    private val b = 0
+    private val b = atomic(0)
 }

@@ -1,9 +1,10 @@
-import kotlinx.atomicfu.*
+import kotlin.test.*
+import kotlin.test.Test
+
 
 class Test {
-    val a = atomic(0)
-
-    fun foo() {
-        a.inlineFoo(5)
+    @Test
+    fun test() {
+        foo()
     }
 }

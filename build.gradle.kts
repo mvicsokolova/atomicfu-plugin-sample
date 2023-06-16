@@ -1,11 +1,13 @@
 buildscript {
     dependencies {
-        classpath("org.jetbrains.kotlinx:atomicfu-gradle-plugin:0.20.2-SNAPSHOT")
+        classpath("org.jetbrains.kotlinx:atomicfu-gradle-plugin:0.20.2")
     }
 }
 
 plugins {
-    kotlin("jvm") version "1.9.0-RC-223"
+    //kotlin("jvm") version "1.9.20-dev-3828"
+    kotlin("jvm") version "1.9.255-SNAPSHOT-jvm"
+    //kotlin("jvm") version "1.8.20"
     application
 }
 

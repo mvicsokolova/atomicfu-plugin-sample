@@ -1,11 +1,11 @@
 buildscript {
     dependencies {
-        classpath "org.jetbrains.kotlinx:atomicfu-gradle-plugin:0.18.3-train-local"
+        classpath "org.jetbrains.kotlinx:atomicfu-gradle-plugin:0.21.0"
     }
 }
 
 plugins {
-    id("org.jetbrains.kotlin.jvm") version "1.7.20-RC-162"
+    id("org.jetbrains.kotlin.jvm") version "1.9.255-SNAPSHOT-jvm"
 }
 
 apply plugin: 'kotlinx-atomicfu'
@@ -13,7 +13,8 @@ apply plugin: 'kotlinx-atomicfu'
 repositories {
     mavenLocal()
     mavenCentral()
-    maven {
-        url = uri("https://maven.pkg.jetbrains.space/kotlin/p/kotlin/dev")
-    }
+}
+
+dependencies {
+    testImplementation("org.jetbrains.kotlin:kotlin-test:1.8.20")
 }

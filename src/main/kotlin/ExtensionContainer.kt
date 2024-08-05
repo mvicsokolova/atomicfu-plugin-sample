@@ -1,5 +1,5 @@
 import kotlinx.atomicfu.*
 
-inline fun AtomicInt.inlineFoo(v: Int) {
+internal inline fun AtomicInt.inlineFoo(v: Int) {
     value = v
 }
